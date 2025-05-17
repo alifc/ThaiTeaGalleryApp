@@ -59,6 +59,7 @@ Aplikasi ini menampilkan berbagai varian minuman Thai Tea beserta resep dan gamb
 
 ## Developer
 Nama: Alif Caesar Awaludin  
+NIM: 221232026
 Kelas: ITBS-JM SMT 6  
 
 ## Link GitHub
