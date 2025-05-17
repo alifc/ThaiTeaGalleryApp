@@ -90,7 +90,7 @@ Menggunakan `Intent` untuk berpindah antar halaman:
 
 ---
 
-## 🛠️ Tools & Teknologi
+## Tools & Teknologi
 
 - Bahasa: **Java**
 - IDE: **Android Studio**
@@ -100,7 +100,7 @@ Menggunakan `Intent` untuk berpindah antar halaman:
 
 ---
 
-## 🖼️ Screenshot Aplikasi
+## Screenshot Aplikasi
 
 > (Masukkan gambar hasil screenshot aplikasi kamu di bagian ini. Contoh:)
 
@@ -110,7 +110,7 @@ Menggunakan `Intent` untuk berpindah antar halaman:
 
 ---
 
-## 📁 Struktur Folder
+## Struktur Folder
 ThaiTeaGalleryApp/
 ├── app/
 │ ├── src/
