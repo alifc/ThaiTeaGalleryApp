@@ -136,4 +136,4 @@ NIM: 221232026
 Kelas: ITBS-JM SMT 6  
 
 ## Link GitHub
-https://github.com/alifc/ThaiTeaGalleryApp
+https://github.com/alifc/ThaiTeaGalleryApp.git
