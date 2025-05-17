@@ -29,7 +29,6 @@ Aplikasi ini menampilkan berbagai varian minuman Thai Tea beserta resep dan gamb
 - ScrollView
 - Styling dengan string.xml & dimen.xml
 
-
 ## Developer
 Nama: Alif Caesar Awaludin  
 Kelas: ITBS-JM SMT 6  
