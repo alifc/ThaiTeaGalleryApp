@@ -25,6 +25,8 @@ Aplikasi ini menampilkan berbagai varian minuman Thai Tea beserta resep dan gamb
 - ImageView
 - Button
 - Intent
+- Color
+- String
 - GridLayout
 - ScrollView
 - Styling dengan string.xml & dimen.xml
