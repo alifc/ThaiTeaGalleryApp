@@ -5,8 +5,8 @@ UTS Pemrograman Mobile ITBS-JM
 Aplikasi ini menampilkan berbagai varian minuman Thai Tea beserta resep dan gambarnya. Dibuat menggunakan Android Studio dan Java.
 
 ## Fitur
-- Splash Screen
-![ikon aplikasi](https://github.com/user-attachments/assets/b653a9b7-7bdb-47fc-a905-c6c87df56513)
+- Ikon
+![ikon](https://github.com/user-attachments/assets/346eec17-b448-4882-9f0e-c81b76d4798f)
 
 - Tampilan Grid Menu Thai Tea
 ![ikon aplikasi](https://github.com/user-attachments/assets/dcc5a0cd-12f3-4164-8acc-9781e5a97230)
