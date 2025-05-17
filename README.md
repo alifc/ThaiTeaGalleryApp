@@ -57,6 +57,79 @@ Aplikasi ini menampilkan berbagai varian minuman Thai Tea beserta resep dan gamb
 - Android Manifest
 ![Andoid Manifest](https://github.com/user-attachments/assets/8e62724e-1555-4fdd-be9e-0b2881a478cc)
 
+## Fitur Aplikasi
+
+### 1. Splash Screen  
+Tampilan awal aplikasi yang menunjukkan logo Thai Tea dan nama aplikasi. Dilengkapi tombol **Masuk** untuk masuk ke menu utama.
+
+### 2. Menu Utama (Galeri Thai Tea)  
+Menampilkan berbagai varian Thai Tea dalam bentuk grid. Masing-masing terdiri dari:
+- Gambar minuman
+- Nama minuman
+
+### 3. Halaman Detail  
+Saat varian Thai Tea diklik, pengguna diarahkan ke halaman baru yang menampilkan:
+- Gambar lebih besar
+- Nama minuman
+- Resep/cara pembuatan lengkap dan panjang
+
+### 4. Tombol Kembali  
+Tombol untuk kembali atau keluar dari halaman utama aplikasi.
+
+### 5. Styling dan Desain  
+Tampilan aplikasi dibuat cerah dan modern:
+- CardView dengan sudut membulat
+- Background warna lembut
+- Padding dan margin rapi
+- Gambar responsif (scaleType: `CENTER_CROP`)
+
+### 6. Intent dan Navigasi  
+Menggunakan `Intent` untuk berpindah antar halaman:
+- Splash ➡ Menu Utama  
+- Menu Utama ➡ Halaman Detail (dengan data: gambar, nama, resep)
+
+---
+
+## 🛠️ Tools & Teknologi
+
+- Bahasa: **Java**
+- IDE: **Android Studio**
+- Target API: 31 (Android 12)
+- Minimum SDK: 21
+- Gradle: default Android Studio
+
+---
+
+## 🖼️ Screenshot Aplikasi
+
+> (Masukkan gambar hasil screenshot aplikasi kamu di bagian ini. Contoh:)
+
+![Splash Screen](screenshots/splash.png)  
+![Galeri Thai Tea](screenshots/gallery.png)  
+![Halaman Detail](screenshots/detail.png)
+
+---
+
+## 📁 Struktur Folder
+ThaiTeaGalleryApp/
+├── app/
+│ ├── src/
+│ │ ├── main/
+│ │ │ ├── java/com/example/thaiteagalleryapp/
+│ │ │ │ ├── MainActivity.java
+│ │ │ │ ├── DetailActivity.java
+│ │ │ ├── res/
+│ │ │ │ ├── layout/
+│ │ │ │ │ ├── activity_main.xml
+│ │ │ │ │ ├── activity_detail.xml
+│ │ │ │ ├── drawable/
+│ │ │ │ │ ├── original_thai_tea.png
+│ │ │ │ ├── values/
+│ │ │ │ │ ├── strings.xml
+│ │ │ │ │ ├── colors.xml
+│ │ │ │ │ ├── styles.xml
+│ │ │ ├── AndroidManifest.xml
+
 ## Developer
 Nama: Alif Caesar Awaludin  
 NIM: 221232026
