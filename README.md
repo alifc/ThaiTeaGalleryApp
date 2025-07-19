@@ -79,31 +79,8 @@ Database disimpan secara lokal dan diakses menggunakan `SQLiteOpenHelper`.
 ---
 
 ## 🗂️ Struktur Proyek
-ThaiTeaGalleryApp/
-├── app/
-│ ├── src/
-│ │ ├── main/
-│ │ │ ├── java/com/example/thaiteagalleryapp/
-│ │ │ │ ├── SplashActivity.java
-│ │ │ │ ├── RegisterActivity.java
-│ │ │ │ ├── MainActivity.java
-│ │ │ │ ├── DetailActivity.java
-│ │ │ │ ├── AddEditActivity.java
-│ │ │ │ ├── DBHelper.java
-│ │ │ ├── res/
-│ │ │ │ ├── layout/
-│ │ │ │ │ ├── activity_main.xml
-│ │ │ │ │ ├── activity_detail.xml
-│ │ │ │ │ ├── activity_add_edit.xml
-│ │ │ │ │ ├── activity_splash.xml
-│ │ │ │ ├── drawable/
-│ │ │ │ │ ├── thai_tea_*.png
-│ │ │ │ ├── values/
-│ │ │ │ │ ├── strings.xml
-│ │ │ │ │ ├── colors.xml
-│ │ │ │ │ ├── styles.xml
-│ │ │ ├── AndroidManifest.xml
- 
+<img width="240" height="453" alt="image" src="https://github.com/user-attachments/assets/e7fadf72-b15a-4d13-83ee-4e53fa728046" />
+
 ---
 
 # DetailActivity
