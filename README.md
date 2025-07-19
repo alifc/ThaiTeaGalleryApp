@@ -1,57 +1,109 @@
-# Thai Tea Gallery App
-**UAS Pemrograman Mobile ITBS-JM**  
-**Developer:** Alif Caesar Awaludin  
-**NIM:** 221232026  
-**Kelas:** ITBS-JM SMT 6
+# Thai Tea Gallery App  
+**UAS Pemrograman Mobile - ITBS**
+**Alif Caesar Awaludin - 221232026 - TI**
 
----
-
-## Deskripsi Aplikasi
-
-Aplikasi ini menampilkan berbagai varian minuman **Thai Tea** beserta resep dan gambarnya. Dibuat menggunakan **Android Studio** dan **Java**.  
-Aplikasi memiliki desain modern, navigasi antar halaman, dan tampilan menarik.
+## Deskripsi Aplikasi  
+Aplikasi ini menampilkan berbagai varian minuman Thai Tea beserta resep dan gambarnya. Pengguna dapat melihat, menambah, mengubah, dan menghapus data varian Thai Tea menggunakan database **SQLite**. Dibuat menggunakan Android Studio dan Java.
 
 ---
 
 ## Fitur Aplikasi
 
-### 1. Splash Screen
+### 1. Splash Screen (Login & Register)
 - Tampilan awal aplikasi dengan logo Thai Tea dan nama aplikasi
-- Terdapat tombol **"Masuk dengan input username dan password"** dan **"Daftar dengan input username dan password pengguna baru"** untuk melanjutkan ke halaman menu utama
+- Input:
+  - **Username & Password** untuk login
+  - **Registrasi pengguna baru**
+- Validasi login menggunakan database SQLite
 
 ### 2. Menu Utama (Galeri Thai Tea)
 - Menampilkan daftar varian Thai Tea dalam bentuk **Grid**
-- Tiap item berisi gambar dan nama minuman
+- Setiap item berisi:
+  - Gambar minuman
+  - Nama minuman
+- Fitur Tambahan:
+  - Tombol **Tambah** varian Thai Tea baru
+  - Tombol **Edit** untuk memperbarui varian
+  - Tombol **Hapus** untuk menghapus varian dari database
 - Menggunakan **CardView** dengan tampilan modern
-- Terdapat tombol tambah untuk menambahkan varian thai tea baru
 
 ### 3. Halaman Detail
-- Saat item diklik, akan terbuka halaman baru dengan:
+- Ketika item diklik, tampil halaman detail:
   - Gambar ukuran besar
   - Nama minuman
-  - **Deskripsi lengkap & resep pembuatan panjang**
+  - Deskripsi lengkap dan resep pembuatan panjang
 
 ### 4. Intent & Navigasi
-- Splash ➡ Menu Utama  
-- Menu Utama ➡ Detail (via Intent kirim gambar, nama, resep)
+- `SplashActivity` ➡ `MainActivity` (setelah login)
+- `MainActivity` ➡ `DetailActivity` (dengan Intent: gambar, nama, resep)
+- Navigasi antar halaman menggunakan **Intent Explicit**
 
 ### 5. Styling dan Desain
-- Desain modern & cerah
-- **CardView** membulat dengan bayangan lembut
-- Background warna pastel
-- Layout rapi, gambar responsif (CENTER_CROP)
+- Desain modern, cerah dan rapi:
+  - CardView membulat dengan bayangan halus
+  - Gambar dengan scaleType: `CENTER_CROP`
+  - Warna pastel sebagai background
+  - Layout responsif & clean
 
 ---
 
+## CRUD + SQLite
+Aplikasi mendukung fitur **CRUD (Create, Read, Update, Delete)** dengan database lokal SQLite:
 
-## Tools & Teknologi
+- **Create:** Tambah varian Thai Tea (form input: nama, gambar, deskripsi)
+- **Read:** Menampilkan data dari database di halaman utama (GridView/ListView)
+- **Update:** Mengubah nama/deskripsi/gambar dari varian
+- **Delete:** Hapus varian Thai Tea dari database
 
-- **Bahasa**: Java  
-- **IDE**: Android Studio  
-- **Minimum SDK**: 21  
-- **Target API**: 31 (Android 12)  
-- **Gradle**: default bawaan Android Studio  
+Database disimpan secara lokal dan diakses menggunakan `SQLiteOpenHelper`.
 
+---
+
+## 🛠️ Komponen yang Digunakan
+
+- `TextView`, `EditText`, `ImageView`, `Button`
+- `CardView`, `ScrollView`, `GridView`
+- `Intent`, `SharedPreferences`
+- `SQLiteOpenHelper`, `SQLiteDatabase`, `Cursor`
+- `AndroidManifest.xml`, `colors.xml`, `strings.xml`
+
+---
+
+## ⚙️ Tools & Teknologi
+- **Bahasa:** Java
+- **IDE:** Android Studio
+- **Minimum SDK:** 21
+- **Target API:** 31 (Android 12)
+- **Gradle:** default Android Studio
+
+---
+
+## 🗂️ Struktur Proyek
+ThaiTeaGalleryApp/
+├── app/
+│ ├── src/
+│ │ ├── main/
+│ │ │ ├── java/com/example/thaiteagalleryapp/
+│ │ │ │ ├── SplashActivity.java
+│ │ │ │ ├── RegisterActivity.java
+│ │ │ │ ├── MainActivity.java
+│ │ │ │ ├── DetailActivity.java
+│ │ │ │ ├── AddEditActivity.java
+│ │ │ │ ├── DBHelper.java
+│ │ │ ├── res/
+│ │ │ │ ├── layout/
+│ │ │ │ │ ├── activity_main.xml
+│ │ │ │ │ ├── activity_detail.xml
+│ │ │ │ │ ├── activity_add_edit.xml
+│ │ │ │ │ ├── activity_splash.xml
+│ │ │ │ ├── drawable/
+│ │ │ │ │ ├── thai_tea_*.png
+│ │ │ │ ├── values/
+│ │ │ │ │ ├── strings.xml
+│ │ │ │ │ ├── colors.xml
+│ │ │ │ │ ├── styles.xml
+│ │ │ ├── AndroidManifest.xml
+ 
 ---
 
 # DetailActivity
@@ -148,10 +200,28 @@ Aplikasi memiliki desain modern, navigasi antar halaman, dan tampilan menarik.
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/1bd48b51-f61d-4fb2-9c72-6d7ec3721e28" />
 
 ---
-## Developer
-Nama: Alif Caesar Awaludin  
-NIM: 221232026
-Kelas: ITBS-JM SMT 6  
 
-## Link GitHub
-https://github.com/alifc/ThaiTeaGalleryApp.git
+## Developer
+
+- **Nama:** Alif Caesar Awaludin  
+- **NIM:** 221232026  
+- **Kelas:** ITBS-JM SMT 6
+
+---
+
+## Link GitHub Repository
+
+[https://github.com/alifc/ThaiTeaGalleryApp.git](https://github.com/alifc/ThaiTeaGalleryApp.git)
+
+---
+
+## Laporan PDF UAS
+
+https://docs.google.com/document/d/1B_o-PSRWewPsis_LvAuLVbN-6QBcA8E9jHWfgyQ1cjM/edit?tab=t.0
+
+---
+
+## Catatan
+
+> Aplikasi ini dibuat sebagai bentuk implementasi pembelajaran Pemrograman Mobile Android menggunakan Java.  
+> Diharapkan mampu menjadi dasar pembuatan aplikasi CRUD dengan tampilan yang menarik dan data tersimpan secara lokal.
