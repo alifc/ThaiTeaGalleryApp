@@ -14,6 +14,15 @@
         android:layout_gravity="start"
         android:backgroundTint="@android:color/holo_orange_light" />
 
+    <!-- Tambahkan Tombol Tambah Gambar -->
+    <Button
+        android:id="@+id/btnTambahGambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Gambar"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_green_light" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

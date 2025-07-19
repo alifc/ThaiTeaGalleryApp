@@ -2,34 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
-    android:background="#FFFAF3"
-    android:padding="24dp">
+    android:orientation="vertical"
+    android:background="#FFFDF6">
 
-    <!-- Ganti teks dengan logo -->
     <ImageView
-        android:id="@+id/logoImage"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/ic_tea_logo"
         android:contentDescription="Logo Thai Tea"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="24dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Thai Tea Gallery App"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="#5D4037"
-        android:layout_marginBottom="32dp" />
-
-    <Button
-        android:id="@+id/btnMasuk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Masuk"
-        android:backgroundTint="#FFA000"
-        android:textColor="#FFFFFF" />
+        android:text="Thai Tea App"
+        android:textSize="24sp"
+        android:textColor="#FF6F00"
+        android:textStyle="bold"/>
 </LinearLayout>

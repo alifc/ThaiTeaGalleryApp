@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#FFF8E1">
+
+    <ImageView
+        android:id="@+id/imageViewPreview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Thai Tea"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/editTextDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi Thai Tea"
+        android:layout_marginTop="12dp"
+        android:minLines="3"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/buttonSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/holo_green_light" />
+</LinearLayout>
